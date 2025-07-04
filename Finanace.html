@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Owner Payments & Finance Guide</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafd;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+      color: #1a5276;
+      margin-bottom: 30px;
+    }
+    details {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    summary {
+      background-color: #1f618d;
+      color: #fff;
+      padding: 18px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    th {
+      background-color: #3498db;
+      color: #fff;
+      position: sticky;
+      top: 0;
+    }
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+    .sub-heading {
+      background-color: #d6eaf8;
+      font-weight: bold;
+      text-align: center;
+      font-size: 17px;
+      border: 2px solid #5dade2;
+      color: #154360;
+    }
+    td[colspan] ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    #searchBox {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .summary-chart {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 10px;
+    }
+    .summary-card {
+      background: linear-gradient(135deg, #d6eaf8, #aed6f1);
+      border-left: 5px solid #1a5276;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .summary-card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #154360;
+    }
+    .summary-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Owner Payments & Finance Interactive Guide</h1>
+  <input type="text" id="searchBox" placeholder="🔍 Search within sections..." onkeyup="searchTable()" />
+
+  <details open>
+    <summary>💬 Introduction</summary>
+    <table>
+      <tr><td>This team handles all rent & security deposit transactions. Any queries = reach out to them!</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>📌 Summary (Visual Overview)</summary>
+    <div class="summary-chart">
+      <div class="summary-card">
+        <h3>TFF Waiver</h3>
+        <p>Requires Business Head approval and sharing correct RP IDs with Finance team.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Service Charges Waiver</h3>
+        <p>Ticket & support task with detailed notes and documents. TAT: 24 hrs.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Reimbursements</h3>
+        <p>Mandatory paid receipt and written approval required. Upload in task.</p>
+      </div>
+      <div class="summary-card">
+        <h3>False Charges</h3>
+        <p>Written confession and city head approval; raise task and follow up.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Fine Waiver</h3>
+        <p>Needs Business Head's approval, proper documentation and task submission.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Offboarding Settlement</h3>
+        <p>Handled by Offboarding Team if any commitment exists. ZRM to forward info.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Proper Documentation</h3>
+        <p>Receipts and approvals are compulsory. Add them to internal comments.</p>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>💰 Finance - Processes & Escalations</summary>
+    <!-- KEEPING each topic unmerged as per user instruction -->
+    <table>
+      <tr><th>Topic</th><th>Step</th><th>Action</th><th>Resolution</th><th>Suggestion</th></tr>
+      <!-- TFF Waiver -->
+      <tr><td rowspan="3">TFF Waiver</td><td>1</td><td>Get Business Head approval</td><td>Approval is prerequisite</td><td>Double-check RP IDs</td></tr>
+      <tr><td>2</td><td>Write to Finance POC</td><td>With correct RP IDs</td><td>Clear explanation helps</td></tr>
+      <tr><td>3</td><td>State the reason clearly</td><td>Finance validates request</td><td>Be concise and specific</td></tr>
+
+      <!-- Reimbursement -->
+      <tr><td rowspan="8">Reimbursement</td><td>1</td><td>Collect approval & receipt</td><td>Business Head written approval + proof</td><td>Mandatory for finance validation</td></tr>
+      <tr><td>2</td><td>Raise ticket + task</td><td>Finance team will track through support task</td><td>Use right ticket type</td></tr>
+      <tr><td>3</td><td>Explain in notes</td><td>Gives Finance proper context</td><td>Highlight urgency if any</td></tr>
+      <tr><td>4</td><td>Upload docs</td><td>Receipts, approvals</td><td>Use internal comments only</td></tr>
+      <tr><td>5</td><td>Monitor resolution</td><td>TAT is 24 hours</td><td>Use task ID to follow up</td></tr>
+      <tr><td>6</td><td>Escalate delays</td><td>Contact assigned POC</td><td>Share support task link</td></tr>
+      <tr><td>7</td><td>Tag POC in threads</td><td>Keeps context clear</td><td>Helps faster closure</td></tr>
+      <tr><td>8</td><td>Final review</td><td>Finance comment = resolution</td><td>Raise new task if unresolved</td></tr>
+
+      <!-- False Charges -->
+      <tr><td rowspan="8">False Charges</td><td>1</td><td>Get confession & approval</td><td>From origin team + City Head</td><td>Ensure complete documentation</td></tr>
+      <tr><td>2</td><td>Raise support task</td><td>Send to Finance</td><td>Use correct category</td></tr>
+      <tr><td>3</td><td>Explain in notes</td><td>Clearly explain case</td><td>Attach references</td></tr>
+      <tr><td>4</td><td>Upload documents</td><td>Include receipts & approvals</td><td>In Internal Comments</td></tr>
+      <tr><td>5</td><td>Wait for resolution</td><td>TAT: 24 hours</td><td>Check status</td></tr>
+      <tr><td>6</td><td>Follow-up if delayed</td><td>Email/chat POC</td><td>Use task link</td></tr>
+      <tr><td>7</td><td>Tag POC in threads</td><td>Maintain clarity</td><td>Ensure prompt updates</td></tr>
+      <tr><td>8</td><td>Final check</td><td>Resolved status</td><td>Raise new task if needed</td></tr>
+
+      <!-- Fines Waiver -->
+      <tr><td rowspan="8">Fines Waiver</td><td>1</td><td>Get Business Head approval</td><td>Approval is prerequisite</td><td>Mandatory for waiver</td></tr>
+      <tr><td>2</td><td>Raise support task</td><td>With proper reason</td><td>Tag correctly</td></tr>
+      <tr><td>3</td><td>Explain in notes</td><td>Detail all context</td><td>Keep notes clear</td></tr>
+      <tr><td>4</td><td>Upload documents</td><td>Approvals, receipts</td><td>Use Internal Comments</td></tr>
+      <tr><td>5</td><td>Wait for resolution</td><td>TAT: 24 hours</td><td>Track via dashboard</td></tr>
+      <tr><td>6</td><td>Escalate if delayed</td><td>Email/chat with POC</td><td>Share task ID</td></tr>
+      <tr><td>7</td><td>Tag POC in threads</td><td>Follow proper format</td><td>For clarity & tracking</td></tr>
+      <tr><td>8</td><td>Final check</td><td>Review Finance comments</td><td>Raise follow-up task if needed</td></tr>
+
+      <!-- Service Charges Waiver -->
+      <tr><td rowspan="8">Service Charges Waiver</td><td>1</td><td>Approval from BH + Service Head</td><td>Mandatory before task</td><td>Document both approvals</td></tr>
+      <tr><td>2</td><td>Raise support task</td><td>With full context</td><td>Mark category properly</td></tr>
+      <tr><td>3</td><td>Explain in notes</td><td>Outline case clearly</td><td>Add urgency if needed</td></tr>
+      <tr><td>4</td><td>Upload supporting docs</td><td>Include receipts/emails</td><td>Use Internal Comments</td></tr>
+      <tr><td>5</td><td>Monitor status</td><td>TAT: 24 hours</td><td>Follow dashboard</td></tr>
+      <tr><td>6</td><td>Follow-up if delayed</td><td>Chat/email assigned POC</td><td>Use task link</td></tr>
+      <tr><td>7</td><td>Tag POC in thread</td><td>Maintain visibility</td><td>Supports resolution</td></tr>
+      <tr><td>8</td><td>Final review</td><td>Check resolved status</td><td>Raise new task if unresolved</td></tr>
+
+      <!-- Offboarding Settlement -->
+      <tr><td>Offboarding Settlement</td><td>1</td><td>Forward waiver details</td><td>Handled by Offboarding Team</td><td>ZRM should not process</td></tr>
+      <!-- Documentation -->
+      <tr><td>Documentation</td><td>1</td><td>Submit receipts + approvals</td><td>Mandatory for all finance tasks</td><td>Delays if missing</td></tr>
+    </table>
+  </details>
+
+  <script>
+    function searchTable() {
+      const input = document.getElementById("searchBox").value.toLowerCase();
+      const details = document.querySelectorAll("details");
+      details.forEach(detail => {
+        const content = detail.innerText.toLowerCase();
+        detail.open = input && content.includes(input);
+      });
+    }
+  </script>
+</body>
+</html>
